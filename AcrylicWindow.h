@@ -14,7 +14,7 @@ enum ACCENT_STATE {
     ACCENT_ENABLE_GRADIENT = 1,
     ACCENT_ENABLE_TRANSPARENTGRADIENT = 2,
     ACCENT_ENABLE_BLURBEHIND = 3,
-    ACCENT_ENABLE_ACRYLICBLURBEHIND = 4, // Valore per l'effetto acrilico
+    ACCENT_ENABLE_ACRYLICBLURBEHIND = 4,
     ACCENT_INVALID_STATE = 5
 };
 
@@ -25,7 +25,6 @@ typedef struct _ACCENT_POLICY {
     int nAnimationId;
 } ACCENT_POLICY;
 
-// Definizione della struttura WINDOWCOMPOSITIONATTRIBDATA
 typedef struct _WINDOWCOMPOSITIONATTRIBDATA {
     int nAttribute;
     PVOID pData;
