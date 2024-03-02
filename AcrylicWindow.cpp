@@ -4,17 +4,14 @@ bool SetWindowCompositionAttribute(HWND hwnd, ACCENT_POLICY* policy);
 
 void AcrylicWindow::MakeAcrylicWindow(HWND hwnd)
 {
-	// Abilita gli effetti di composizione
 	int compositionEnabled = TRUE;
     DwmEnableComposition(DWM_EC_ENABLECOMPOSITION);
 
-	// Definisce la struttura per li sfondo acrilico
     ACCENT_POLICY accent = {
         ACCENT_ENABLE_ACRYLICBLURBEHIND,
         NULL, NULL, NULL
     };
 
-	// Imposta lo sfondo acrilico sulla finestra
 	WINDOWCOMPOSITIONATTRIBDATA data;
 	data.nAttribute = WCA_ACCENT_POLICY;
 	data.pData = &accent;
